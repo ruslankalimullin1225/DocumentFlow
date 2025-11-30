@@ -64,11 +64,27 @@ All tests should pass successfully:
 
 ## Running the Application
 
+### Способ 1: Через batch-скрипт (самый простой)
 ```bash
-mvn javafx:run
+run.bat
 ```
 
-Or use your IDE to run the `com.docflow.App` main class.
+### Способ 2: Через Maven
+```bash
+mvn clean javafx:run
+```
+
+### Способ 3: Через IntelliJ IDEA
+1. Откройте проект в IntelliJ IDEA
+2. Подождите индексации
+3. Найдите `App.java` в `src/main/java/com/docflow/`
+4. Правой кнопкой → Run 'App.main()'
+5. Если появится ошибка о JavaFX модулях, добавьте в VM options:
+   ```
+   --module-path "C:\path\to\javafx-sdk\lib" --add-modules javafx.controls,javafx.fxml
+   ```
+
+**Важно:** Приложение использует Java модульную систему (module-info.java) для правильной работы с JavaFX.
 
 ## Usage
 
