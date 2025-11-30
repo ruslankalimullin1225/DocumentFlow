@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.docflow.ui.MainController"
+            prefHeight="600.0" prefWidth="800.0"
+            stylesheets="@../styles/application.css">
+
+    <top>
+        <VBox spacing="10" styleClass="header">
+            <padding>
+                <Insets top="15" right="15" bottom="15" left="15"/>
+            </padding>
+
+            <Label text="Document Management System" styleClass="title">
+                <font>
+                    <Font name="System Bold" size="20"/>
+                </font>
+            </Label>
+
+            <HBox spacing="10">
+                <Button fx:id="btnNewInvoice" text="New Invoice" onAction="#handleNewInvoice" styleClass="btn-primary"/>
+                <Button fx:id="btnNewPayment" text="New Payment" onAction="#handleNewPayment" styleClass="btn-primary"/>
+                <Button fx:id="btnNewPaymentRequest" text="New Payment Request" onAction="#handleNewPaymentRequest" styleClass="btn-primary"/>
+            </HBox>
+
+            <HBox spacing="10">
+                <Button fx:id="btnSave" text="Save" onAction="#handleSave"/>
+                <Button fx:id="btnLoad" text="Load" onAction="#handleLoad"/>
+                <Button fx:id="btnView" text="View" onAction="#handleView"/>
+                <Button fx:id="btnDelete" text="Delete" onAction="#handleDelete" styleClass="btn-danger"/>
+                <Button fx:id="btnExit" text="Exit" onAction="#handleExit"/>
+            </HBox>
+        </VBox>
+    </top>
+
+    <center>
+        <VBox spacing="5">
+            <padding>
+                <Insets top="10" right="15" bottom="15" left="15"/>
+            </padding>
+
+            <Label text="Documents:">
+                <font>
+                    <Font name="System Bold" size="14"/>
+                </font>
+            </Label>
+
+            <ListView fx:id="documentListView" VBox.vgrow="ALWAYS"/>
+        </VBox>
+    </center>
+</BorderPane>

@@ -1,0 +1,124 @@
+/* Root */
+.root {
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+    -fx-font-size: 13px;
+    -fx-background-color: #f5f5f5;
+}
+
+/* Header */
+.header {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 0 0 1 0;
+}
+
+/* Title */
+.title {
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #e0e0e0;
+    -fx-text-fill: #333333;
+    -fx-padding: 8 16 8 16;
+    -fx-background-radius: 4;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #d0d0d0;
+}
+
+.button:pressed {
+    -fx-background-color: #c0c0c0;
+}
+
+/* Primary Button */
+.btn-primary {
+    -fx-background-color: #007bff;
+    -fx-text-fill: white;
+}
+
+.btn-primary:hover {
+    -fx-background-color: #0056b3;
+}
+
+.btn-primary:pressed {
+    -fx-background-color: #004085;
+}
+
+/* Danger Button */
+.btn-danger {
+    -fx-background-color: #dc3545;
+    -fx-text-fill: white;
+}
+
+.btn-danger:hover {
+    -fx-background-color: #c82333;
+}
+
+.btn-danger:pressed {
+    -fx-background-color: #bd2130;
+}
+
+/* ListView */
+.list-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d0d0d0;
+    -fx-border-width: 1;
+    -fx-border-radius: 4;
+}
+
+.list-cell {
+    -fx-background-color: transparent;
+    -fx-padding: 8;
+}
+
+.list-cell:selected {
+    -fx-background-color: #e3f2fd;
+}
+
+.list-cell:hover {
+    -fx-background-color: #f5f5f5;
+}
+
+/* TextFields */
+.text-field, .text-area {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d0d0d0;
+    -fx-border-width: 1;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-padding: 6;
+}
+
+.text-field:focused, .text-area:focused {
+    -fx-border-color: #007bff;
+    -fx-border-width: 2;
+}
+
+/* DatePicker */
+.date-picker {
+    -fx-background-color: #ffffff;
+}
+
+.date-picker .text-field {
+    -fx-background-color: #ffffff;
+}
+
+/* CheckBox */
+.check-box {
+    -fx-cursor: hand;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #007bff;
+}
+
+/* GridPane */
+.grid-pane {
+    -fx-hgap: 10;
+    -fx-vgap: 10;
+}
